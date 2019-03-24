@@ -43,12 +43,12 @@ def resize_image(img):
         im_scale = float(1200) / float(im_size_max)
     new_h = int(img_size[0] * im_scale)
     new_w = int(img_size[1] * im_scale)
-
+    print('new_h={},new_w={}'.format(new_h,new_w))
     new_h = new_h if new_h // 16 == 0 else (new_h // 16 + 1) * 16
     new_w = new_w if new_w // 16 == 0 else (new_w // 16 + 1) * 16
-
+	print('new_h={},new_w={}'.format(new_h,new_w))
     re_im = cv2.resize(img, (new_w, new_h), interpolation=cv2.INTER_LINEAR)
-    return re_im, (new_h / img_size[0], new_w / img_size[1])
+    return re_im, (float(new_h) / img_size[0], float(new_w) / img_size[1])
 
 
 def main(argv=None):

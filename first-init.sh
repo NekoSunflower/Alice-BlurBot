@@ -14,6 +14,7 @@ pip install -U cython
 cd utils/bbox
 chmod +x make.sh
 ./make.sh
+mv /usr/lib64/*/site-packages/utils/bbox/* ./
 cd ~/alice-blurbot
 wget https://image.moeclub.org/GoogleDrive/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO -O checkpoints_mlt.zip
 unzip checkpoints_mlt.zip
