@@ -37,7 +37,7 @@ def main(argv=None):
         shutil.rmtree(FLAGS.output_path)
     os.makedirs(FLAGS.output_path)
     os.environ['CUDA_VISIBLE_DEVICES'] = FLAGS.gpu
-	os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
     with tf.get_default_graph().as_default():
         input_image = tf.placeholder(tf.float32, shape=[None, None, None, 3], name='input_image')

@@ -1,3 +1,4 @@
+yum -y install python-pip python-devel gcc gcc-c++ unzip
 cd ~/
 mkdir alice-blurbot
 cd alice-blurbot
@@ -5,7 +6,6 @@ wget https://github.com/NekoSunflower/Alice-BlurBot/archive/master.zip -O alice-
 unzip alice-blurbot.zip
 mv Alice-BlurBot-master/* ./
 rm -rf Alice-BlurBot-master
-yum -y install python-pip python-devel
 python -m pip install --upgrade pip
 pip install -U opencv-python
 pip install -U numpy
