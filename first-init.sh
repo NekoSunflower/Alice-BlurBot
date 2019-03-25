@@ -1,4 +1,4 @@
-yum -y install python-pip python-devel gcc gcc-c++ unzip
+yum -y install python-pip python-devel gcc gcc-c++ unzip libSM libXrender libXext
 cd ~/
 mkdir alice-blurbot
 cd alice-blurbot
